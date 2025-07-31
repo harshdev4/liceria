@@ -4,11 +4,12 @@ import products from "../../products.json";
 import Link from "next/link";
 
 type Props = {
-  params: { productname: string };
+  params: Promise<{ productname: string }>;
 };
 
-const page = ({ params }: Props) => {
-  const productName = decodeURIComponent(params.productname);
+const page = async ({ params }: Props) => {
+  let productName = (await(params)).productname;
+  productName = decodeURIComponent(productName);
   const product = products.find((item) => item.name === productName);
 
   if (!product) {
