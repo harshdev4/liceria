@@ -2,10 +2,31 @@ import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import products from "../../products.json";
 import Link from "next/link";
+import { Metadata } from "next";
 
 type Props = {
   params: Promise<{ productname: string }>;
 };
+
+export async function generateStaticParams() {
+  return products.map((product)=>{
+    return {
+      productName: product.name
+    }
+  })
+}
+
+export const generateMetadata = async ({ params }: Props): Promise<Metadata> => {
+  let productName = (await params).productname;
+  productName = decodeURIComponent(productName);
+  const product = products.find((item) => item.name === productName);
+    return {
+      title: product?.name,
+      description: product?.description.split('\n')[0],
+      keywords: product?.keywords
+    };
+}
+
 
 const page = async ({ params }: Props) => {
   let productName = (await(params)).productname;

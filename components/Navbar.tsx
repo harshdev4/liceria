@@ -24,7 +24,7 @@ const Navbar = () => {
     return (
         <header className="w-full h-[70px] fixed top-0 z-10 bg-white shadow-sm shadow-black-950 px-3 md:px-6 lg:px-10 flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" title="Logo"><Image src={logo} alt='Logo' width={70} height={70} className='w-[70px] h-[70px]' /></Link>
+            <Link href="/" title="Logo"><Image src={logo} alt='Logo' width={70} height={70} priority className='w-[70px] h-[70px]' /></Link>
 
             <form action="/search" method='get' className='hidden w-full border-b-1 py-1 border-[#f08d47] focus-within:border-[#5a3a1b] md:flex md:max-w-fit lg:max-w-90 px-2 items-center gap-2'>
                 <IoIosSearch className='text-gray-500 text-[1.1rem]' />

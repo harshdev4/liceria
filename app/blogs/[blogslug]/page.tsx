@@ -23,7 +23,7 @@ export const generateMetadata = async ({ params }: props): Promise<Metadata> => 
       description: blog?.content.split('\n')[0],
       keywords: blog?.keyword,
     };
-  }
+}
 
 const page = async ({ params }: props) => {
   const slug = (await params).blogslug;
