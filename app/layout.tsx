@@ -12,8 +12,16 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Project 1",
-  description: "Project 1 to showcase",
+  title: "Liceria - Premium Furniture Store in New Delhi | Shop Online",
+  description: "Discover handcrafted furniture at Liceria, your leading furniture store in New Delhi. We offer a wide range of sofas, beds, dining sets, and more, blending quality with exquisite design. Shop online for home and office furniture solutions.",
+  keywords: "Liceria furniture, New Delhi furniture, furniture store Delhi, online furniture India, buy sofa Delhi, modern furniture, wooden furniture, bespoke furniture, home decor Delhi, office furniture New Delhi, luxury furniture, affordable furniture",
+  openGraph: {
+    title: "Liceria - Premium Furniture Store in New Delhi | Shop Online",
+    description: "Discover handcrafted furniture at Liceria, your leading furniture store in New Delhi. We offer a wide range of sofas, beds, dining sets, and more, blending quality with exquisite design. Shop online for home and office furniture solutions.",
+    url: "https://liceria-xi.vercel.app/",
+    siteName: "Liceria Furniture",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
