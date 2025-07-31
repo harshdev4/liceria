@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Modern Queen Bed Frame",
+    "image": "/images/bed.jpg",
+    "description": "Experience luxurious comfort and sturdy craftsmanship with our Modern Queen Bed Frame. Built from kiln-dried hardwood with a rich matte walnut finish, this bed is both elegant and durable. The slatted base supports your mattress without the need for a box spring, while the soft headboard adds comfort and warmth to any bedroom. Perfect for minimalist or mid-century interiors.",
+    "properties": {
+      "Material": "Walnut Hardwood & Upholstery",
+      "Dimensions": "82in x 64in x 45in",
+      "Color": "Walnut + Beige",
+      "Warranty": "5 Years Structural",
+      "Delivery": "Free delivery within 5-7 days"
+    },
+    "suggested": [
+      {
+        "name": "Soft Sofa Chair",
+        "image": "/images/chair.jpg"
+      },
+      {
+        "name": "Contemporary 3-Seater Sofa",
+        "image": "/images/sofa.jpg"
+      },
+      {
+        "name": "3-Drawer Dresser",
+        "image": "/images/dresser.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Soft Sofa Chair",
+    "image": "/images/chair.jpg",
+    "description": "Designed with both form and function in mind, the Ergonomic Lounge Chair supports your posture while delivering premium relaxation. Crafted from molded ash wood and soft foam cushioning, it fits naturally into modern living rooms, home offices, or reading corners. A perfect blend of comfort and sophistication.",
+    "properties": {
+      "Material": "Ash Wood & High-Density Foam",
+      "Dimensions": "30in x 28in x 35in",
+      "Color": "Charcoal Grey + Wood",
+      "Warranty": "3 Years",
+      "Delivery": "Free delivery in 4-6 days"
+    },
+    "suggested": [
+      {
+        "name": "Contemporary 3-Seater Sofa",
+        "image": "/images/sofa.jpg"
+      },
+      {
+        "name": "Modern Queen Bed Frame",
+        "image": "/images/bed.jpg"
+      },
+      {
+        "name": "3-Drawer Dresser",
+        "image": "/images/dresser.jpg"
+      }
+    ]
+  },
+  {
+    "name": "3-Drawer Dresser",
+    "image": "/images/dresser.jpg",
+    "description": "Add function and simplicity to your bedroom or hallway with this 6-drawer Scandinavian dresser. Featuring soft-close drawers, natural ash wood grain, and tapered legs, it provides ample storage while enhancing your interior aesthetics. Built to last and designed to impress.",
+    "properties": {
+      "Material": "Ash Wood + Metal Handles",
+      "Dimensions": "60in x 18in x 32in",
+      "Color": "Light Oak",
+      "Warranty": "5 Years",
+      "Delivery": "Assembly included, 5-day delivery"
+    },
+    "suggested": [
+      {
+        "name": "Soft Sofa Chair",
+        "image": "/images/chair.jpg"
+      },
+      {
+        "name": "Modern Queen Bed Frame",
+        "image": "/images/bed.jpg"
+      },
+      {
+        "name": "Contemporary 3-Seater Sofa",
+        "image": "/images/sofa.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Contemporary 3-Seater Sofa",
+    "image": "/images/sofa.jpg",
+    "description": "The Contemporary 3-Seater Sofa blends classic comfort with clean lines. Upholstered in durable woven fabric with deep seat cushions and a solid wood frame, it’s made for lounging, entertaining, and relaxing. Available in a range of earthy tones to match your living space style.",
+    "properties": {
+      "Material": "Solid Wood Frame + Linen Blend",
+      "Dimensions": "84in x 34in x 32in",
+      "Color": "Stone Grey",
+      "Warranty": "10 Years Frame, 3 Years Fabric",
+      "Delivery": "7-day free delivery + optional setup"
+    },
+    "suggested": [
+      {
+        "name": "Soft Sofa Chair",
+        "image": "/images/chair.jpg"
+      },
+      {
+        "name": "Modern Queen Bed Frame",
+        "image": "/images/bed.jpg"
+      },
+      {
+        "name": "3-Drawer Dresser",
+        "image": "/images/dresser.jpg"
+      }
+    ]
+  }
+]

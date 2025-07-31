@@ -1,11 +1,23 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@config "./tailwind.config.js";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --text: #5a3a1b;
+  --lightText: #aa7b4c;
+  --lightSection: #fdeddc;
+  --paddingHzLg: 2.5rem;  
+  --paddingHzSm: 0.75rem;  
 }
 
 @theme inline {
+  --color-lightTextColor: var(--lightText);
+  --spacing-pHLg: var(--paddingHzLg);
+  --spacing-pHSm: var(--paddingHzSm);
+  --color-textColor: var(--text); 
+  --color-lightSectionBg: var(--lightSection); 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -14,7 +26,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #ffffff;
     --foreground: #ededed;
   }
 }
@@ -23,4 +35,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
