@@ -2,6 +2,23 @@ import React from 'react'
 import blogData from '../blogs.json';
 import BlogCard from '@/components/BlogCard';
 import { AiOutlineMacCommand } from "react-icons/ai";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Liceria Blogs – Furniture Design & Decor Inspiration",
+  description:
+    "Explore expert tips, trends, and inspiration in furniture design and home decor with the Liceria Blog. Discover how handcrafted elegance meets modern interiors from New Delhi’s trusted furniture brand.",
+  keywords:
+    "Liceria blog, furniture blog India, home decor ideas, interior trends, handcrafted furniture tips, modern furniture blog, Liceria insights, design stories, wooden furniture tips, New Delhi interiors, lifestyle furniture blog, home styling tips",
+  openGraph: {
+    title: "Liceria Blogs – Furniture Design & Decor Inspiration",
+    description:
+      "Explore expert tips, trends, and inspiration in furniture design and home decor with the Liceria Blog. Discover how handcrafted elegance meets modern interiors from New Delhi’s trusted furniture brand.",
+    url: "https://liceria-xi.vercel.app/blogs",
+    siteName: "Liceria Furniture",
+    type: "website",
+  },
+};
 
 const page = () => {
     return (

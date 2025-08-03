@@ -1,6 +1,20 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import React from 'react'
 
+
+export const metadata: Metadata = {
+  title: "Liceria - About-Us",
+  description: "Discover handcrafted furniture at Liceria, your leading furniture store in New Delhi. We offer a wide range of sofas, beds, dining sets, and more, blending quality with exquisite design. Shop online for home and office furniture solutions.",
+  keywords: "Liceria about page, about us Liceria, Liceria furniture, New Delhi furniture, furniture store Delhi, online furniture India, buy sofa Delhi, modern furniture, wooden furniture, bespoke furniture, home decor Delhi, office furniture New Delhi, luxury furniture, affordable furniture",
+  openGraph: {
+    title: "Liceria - About-Us",
+    description: "Discover handcrafted furniture at Liceria, your leading furniture store in New Delhi. We offer a wide range of sofas, beds, dining sets, and more, blending quality with exquisite design. Shop online for home and office furniture solutions.",
+    url: "https://liceria-xi.vercel.app/",
+    siteName: "Liceria Furniture",
+    type: "website",
+  },
+};
 const page = () => {
   return (
     <div className="text-textColor">
@@ -11,8 +25,9 @@ const page = () => {
           <div>
             <h1 className="text-4xl font-bold mb-4">About Us</h1>
             <p className="text-lg leading-relaxed">
-              Liceria is a New Delhi-based furniture company that sprang from a deep-rooted passion for exceptional craftsmanship and innovative design. We're dedicated to creating high-quality, stylish, and highly functional pieces that perfectly complement the modern home, recognizing that furniture should be more than just utilitarian – it should truly enhance your living experience and reflect your unique style. Each piece we create is a testament to our unwavering commitment to quality and timeless design.
-            </p>
+  Liceria is a New Delhi-based furniture company that sprang from a deep-rooted passion for exceptional craftsmanship and innovative design. We&rsquo;re dedicated to creating high-quality, stylish, and highly functional pieces that perfectly complement the modern home, recognizing that furniture should be more than just utilitarian – it should truly enhance your living experience and reflect your unique style. Each piece we create is a testament to our unwavering commitment to quality and timeless design.
+</p>
+
           </div>
           <div className="relative aspect-square overflow-hidden shadow-lg">
             <Image
