@@ -18,18 +18,18 @@ const Footer = () => {
                 <div className='flex flex-col gap-y-5 max-w-[250px] md:max-w-full lg:flex-row lg:w-7/10 lg:justify-between'>
                     <div className='my-7 md:my-0'>
                         <h3 className='text-[#bbb9b9]'>GET IN TOUCH</h3>
-                        <h3 className='text-xl md:text-2xl'>liceriafurniture@gmail.com</h3>
+                        <a href='mailto:hello@liceria.in' className='text-xl md:text-2xl'>hello@liceria.in</a>
                     </div>
 
                     <div className='grid grid-cols-[50%_50%] lg:grid-cols-[200px_200px] lg:flex-1 lg:justify-end'>
                         <div className='flex flex-col gap-y-2.5 lg:justify-self-end'>
                             <h3 className='text-[#bbb9b9]'>Pages</h3>
                             <ul className='flex flex-col gap-y-1 text-[1rem] font-normal'>
-                                <li>Home</li>
-                                <li>Blogs</li>
-                                <li>Category</li>
-                                <li>About</li>
-                                <li>Contact</li>
+                                <li><Link href='/'>Home</Link></li>
+                                <li><Link href='/blogs'>Blogs</Link></li>
+                                <li><Link href='/product'>Category</Link></li>
+                                <li><Link href='/about-us'>About</Link></li>
+                                <li><Link href='/contact-us'>Contact</Link></li>
                             </ul>
                         </div>
                         <div className='flex flex-col gap-y-2.5 justify-self-end'>
