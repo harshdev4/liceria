@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import 'aos/dist/aos.css';
 import Footer from "@/components/Footer";
+import AosConfig from "@/components/AosConfig";
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className={`${manrope.className} antialiased`}>
         <Navbar></Navbar>
         <div className="h-[65px]"></div>
+        <AosConfig />
         {children}
         <Footer />
       </body>

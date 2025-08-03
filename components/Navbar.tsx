@@ -35,19 +35,19 @@ const Navbar = () => {
             <nav aria-label="Main navigation" className={`hidden md:block`}>
                 <ul role="list" className="flex items-center justify-center text-[#5a3a1b] md:flex-row md:gap-7 md:font-medium md:text-[1rem]">
                     <li role="listitem">
-                        <Link href="/" title="Home Page">Home</Link>
+                        <Link href="/" title="Home Page" onClick={()=> setIsMenuToggled(false)}>Home</Link>
                     </li>
                     <li role="listitem">
-                        <Link href="/products" title="Products">Products</Link>
+                        <Link href="/products" title="Products" onClick={()=> setIsMenuToggled(false)}>Products</Link>
                     </li>
                     <li role="listitem">
-                        <Link href="/blog" title="Read our blog posts">Blog</Link>
+                        <Link href="/blogs" title="Read our blog posts" onClick={()=> setIsMenuToggled(false)}>Blogs</Link>
                     </li>
                     <li role="listitem">
-                        <Link href="/about-us" title="Learn more about us">About</Link>
+                        <Link href="/about-us" title="Learn more about us" onClick={()=> setIsMenuToggled(false)}>About</Link>
                     </li>
                     <li role="listitem">
-                        <Link href="/contact-us" title="Get in touch with us">Contact</Link>
+                        <Link href="/contact-us" title="Get in touch with us" onClick={()=> setIsMenuToggled(false)}>Contact</Link>
                     </li>
                 </ul>
             </nav>
@@ -57,19 +57,19 @@ const Navbar = () => {
                 <IoClose className='absolute cursor-pointer top-5 right-5 text-3xl text-[#ffffff]' onClick={toggleMenu} />
                 <ul role="list" className="h-full flex flex-col gap-7 px-5 mt-[100px] font-normal text-[1.3rem] text-left text-amber-500">
                     <li role="listitem">
-                        <Link href="/" title="Home Page">Home</Link>
+                        <Link href="/" title="Home Page" onClick={toggleMenu}>Home</Link>
                     </li>
                     <li role="listitem">
-                        <Link href="/products" title="Products">Products</Link>
+                        <Link href="/products" title="Products" onClick={toggleMenu}>Products</Link>
                     </li>
                     <li role="listitem">
-                        <Link href="/blog" title="Read our blog posts">Blog</Link>
+                        <Link href="/blogs" title="Read our blog posts" onClick={toggleMenu}>Blogs</Link>
                     </li>
                     <li role="listitem">
-                        <Link href="/about-us" title="Learn more about us">About</Link>
+                        <Link href="/about-us" title="Learn more about us" onClick={toggleMenu}>About</Link>
                     </li>
                     <li role="listitem">
-                        <Link href="/contact-us" title="Get in touch with us">Contact</Link>
+                        <Link href="/contact-us" title="Get in touch with us" onClick={toggleMenu}>Contact</Link>
                     </li>
                 </ul>
             </nav>

@@ -13,7 +13,6 @@ export default function Home() {
 
   return (
     <>
-      <AosConfig />
       <Hero />
       <main className="bg-white text-black pt-5 w-full">
         <Features />
@@ -23,7 +22,10 @@ export default function Home() {
           <SectionHeading title="Might Be Helpful" />
           <div className="w-full h-full py-1 mt-10 mb-7 flex gap-7 justify-between overflow-x-scroll no-scrollbar snap-x snap-mandatory scroll-smooth">
             {
-              data.blogs.map((blog, index) => <BlogCard key={index} id={index} slug={blog.slug} title={blog.title} description={blog.content} />)
+              data.blogs.map((blog, index) => (
+                <div key={index} className='p-2.5 pb-3 flex flex-col gap-1.5 justify-between rounded-2xl shadow-[0_0_4px_rgba(0,0,0,0.5)] text-textColor bg-[white] snap-start overflow-hidden cursor-pointer w-[300px] h-auto flex-shrink-0'>
+                  <BlogCard id={index} slug={blog.slug} title={blog.title} description={blog.content} />
+                </div>))
             }
           </div>
         </section>
